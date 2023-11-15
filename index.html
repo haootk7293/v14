@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>v14.dev</title>
     <style>
       @import url('https://rsms.me/inter/inter.css');
@@ -14,7 +14,12 @@
       }
 
       .background_wrapper {
-        height: 100vh;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
         overflow: hidden;
         filter: blur(100px);
       }
@@ -131,7 +136,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 0;
+        z-index: 1000;
         display: flex;
         gap: 10px;
         flex-direction: column;
